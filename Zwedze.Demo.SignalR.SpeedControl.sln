@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zwedze.Demo.SignalR.SpeedControl.Realtime", "Zwedze.Demo.SignalR.SpeedControl.Realtime\Zwedze.Demo.SignalR.SpeedControl.Realtime.csproj", "{DBBED95E-8318-4B13-93E1-E8443FE14431}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zwedze.Demo.SignalR.SpeedControl.Contracts", "Zwedze.Demo.SignalR.SpeedControl.Contracts\Zwedze.Demo.SignalR.SpeedControl.Contracts.csproj", "{271CCC42-3B8B-439A-B8F9-CC77BF6C36A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zwedze.Demo.SignalR.SpeedControl.Clients.Radar", "Zwedze.Demo.SignalR.SpeedControl.Clients.Radar\Zwedze.Demo.SignalR.SpeedControl.Clients.Radar.csproj", "{726EF496-2D22-4DDA-9082-BDECBB0B45C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zwedze.Demo.SignalR.SpeedControl.Clients.PoliceOffice", "Zwedze.Demo.SignalR.SpeedControl.Clients.PoliceOffice\Zwedze.Demo.SignalR.SpeedControl.Clients.PoliceOffice.csproj", "{538BF970-F2A0-43DF-8E26-C38A9F6FE232}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "clients", "clients", "{1B90A345-602A-43A2-A637-BA01B1231E07}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "hub", "hub", "{1A0BB9B2-94E4-47F2-97A0-8E2CD43BDD27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "contracts", "contracts", "{65CB323A-D6FE-4219-9935-4F16D9FECC6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_solution-items", "_solution-items", "{810270B3-A91A-4780-8338-3CECEB831833}"
+ProjectSection(SolutionItems) = preProject
+	README.md = README.md
+	docker-compose.yml = docker-compose.yml
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zwedze.Demo.SignalR.SpeedControl.Clients.Cops", "Zwedze.Demo.SignalR.SpeedControl.Clients.Cops\Zwedze.Demo.SignalR.SpeedControl.Clients.Cops.csproj", "{47F58BF9-8BC1-4218-ADBD-CDD5F3F9E4FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "helpers", "helpers", "{CD9057F6-ACD0-4437-95D5-E11084524A36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zwedze.Framework.SignalR.Client", "Zwedze.Framework.SignalR.Client\Zwedze.Framework.SignalR.Client.csproj", "{61DA6165-006C-47A4-958A-E89081FA327B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBBED95E-8318-4B13-93E1-E8443FE14431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBBED95E-8318-4B13-93E1-E8443FE14431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBBED95E-8318-4B13-93E1-E8443FE14431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBBED95E-8318-4B13-93E1-E8443FE14431}.Release|Any CPU.Build.0 = Release|Any CPU
+		{271CCC42-3B8B-439A-B8F9-CC77BF6C36A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{271CCC42-3B8B-439A-B8F9-CC77BF6C36A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{271CCC42-3B8B-439A-B8F9-CC77BF6C36A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{271CCC42-3B8B-439A-B8F9-CC77BF6C36A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{726EF496-2D22-4DDA-9082-BDECBB0B45C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{726EF496-2D22-4DDA-9082-BDECBB0B45C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{726EF496-2D22-4DDA-9082-BDECBB0B45C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{726EF496-2D22-4DDA-9082-BDECBB0B45C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{538BF970-F2A0-43DF-8E26-C38A9F6FE232}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538BF970-F2A0-43DF-8E26-C38A9F6FE232}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538BF970-F2A0-43DF-8E26-C38A9F6FE232}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538BF970-F2A0-43DF-8E26-C38A9F6FE232}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47F58BF9-8BC1-4218-ADBD-CDD5F3F9E4FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47F58BF9-8BC1-4218-ADBD-CDD5F3F9E4FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47F58BF9-8BC1-4218-ADBD-CDD5F3F9E4FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47F58BF9-8BC1-4218-ADBD-CDD5F3F9E4FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61DA6165-006C-47A4-958A-E89081FA327B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61DA6165-006C-47A4-958A-E89081FA327B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61DA6165-006C-47A4-958A-E89081FA327B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61DA6165-006C-47A4-958A-E89081FA327B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{726EF496-2D22-4DDA-9082-BDECBB0B45C1} = {1B90A345-602A-43A2-A637-BA01B1231E07}
+		{538BF970-F2A0-43DF-8E26-C38A9F6FE232} = {1B90A345-602A-43A2-A637-BA01B1231E07}
+		{DBBED95E-8318-4B13-93E1-E8443FE14431} = {1A0BB9B2-94E4-47F2-97A0-8E2CD43BDD27}
+		{271CCC42-3B8B-439A-B8F9-CC77BF6C36A2} = {65CB323A-D6FE-4219-9935-4F16D9FECC6E}
+		{47F58BF9-8BC1-4218-ADBD-CDD5F3F9E4FC} = {1B90A345-602A-43A2-A637-BA01B1231E07}
+		{61DA6165-006C-47A4-958A-E89081FA327B} = {CD9057F6-ACD0-4437-95D5-E11084524A36}
+	EndGlobalSection
+EndGlobal

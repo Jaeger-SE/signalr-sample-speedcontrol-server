@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+    police-office:
+      build:
+        context: .
+        dockerfile: Zwedze.Demo.SignalR.SpeedControl.Clients.PoliceOffice/Dockerfile
+        args:
+            ID: bxl-office
+            RADAR_HUB_URI: https://localhost:5001/radar
+            RADARS: pika-radar,flaga-radar
