@@ -8,8 +8,12 @@ namespace Zwedze.Demo.SignalR.SpeedControl.Realtime.HostConfig
     {
         public static void Configure(IServiceCollection services, IConfiguration configuration)
         {
+            services.AddCors();
+            
             var signalrConfig = configuration["SignalR:Domain"];
-            services.AddSignalR();
+            services.AddSignalR()
+                .AddStackExchangeRedis(configuration.GetConnectionString("Redis"),
+                    o => { o.Configuration.ChannelPrefix = "speed-control"; });
             services.AddHealthChecks()
                 .AddSignalRHub($"{signalrConfig}/{HubUris.NotificationsUri}", "notifications-hub")
                 .AddSignalRHub($"{signalrConfig}/{HubUris.RadarUri}", "radar-hub");

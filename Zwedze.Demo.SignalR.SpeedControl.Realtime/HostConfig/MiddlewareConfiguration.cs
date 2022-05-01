@@ -18,9 +18,19 @@ namespace Zwedze.Demo.SignalR.SpeedControl.Realtime.HostConfig
                 ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
             });
 
+            // Configure it properly for your own app. This is a demo so it's kept light.
+            app.UseCors(builder =>
+            {
+                builder.WithOrigins("http://localhost:4200")
+                    .AllowAnyHeader()
+                    .WithMethods("GET", "POST")
+                    .AllowCredentials();
+                ;
+            });
+
             // To enable the UseEndpoints
             app.UseRouting();
-            
+
             app.UseEndpoints(ep =>
             {
                 // Configure active signalR hubs
